@@ -4,4 +4,9 @@ namespace Commands.Core
     {
         void Execute();
     }
+
+    public interface ICommand<ParamType>
+    {
+        void Execute(ParamType parameter);
+    }
 }
