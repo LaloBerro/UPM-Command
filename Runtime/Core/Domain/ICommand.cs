@@ -1,3 +1,5 @@
+using ZenjectExtensions.Zinstallers;
+
 namespace Commands.Core
 {
     public interface ICommand
