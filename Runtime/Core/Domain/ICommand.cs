@@ -1,5 +1,3 @@
-using ZenjectExtensions.Zinstallers;
-
 namespace Commands.Core
 {
     public interface ICommand
@@ -7,8 +5,8 @@ namespace Commands.Core
         void Execute();
     }
 
-    public interface ICommand<ParamType>
+    public interface ICommand<TType>
     {
-        void Execute(ParamType parameter);
+        void Execute(TType parameter);
     }
 }
